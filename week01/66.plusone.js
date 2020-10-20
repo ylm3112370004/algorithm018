@@ -15,7 +15,12 @@ const plusOne = function(digits) {
   newDigits[0] = 1;
   return newDigits;
 }
+
+// time: O(N)
+// space: O(N)
+
 const test1 = plusOne([9]);
 console.log('test1: ', test1)
+
 const test2 = plusOne([1,2,3,4]);
 console.log('test2: ', test2)
