@@ -17,3 +17,26 @@
 
 
 ## 15 3sum
+
+
+
+
+## 22 swapNodeInPairs 两两交换节点
+1. 迭代 while loop
+- 添加一个dummyHead帮助迭代
+- 由于要返回链表 所有在操作的过程中 需要另外一个临时节点来代替dummyHead
+
+2. 递归 recursion
+递归的不太懂
+
+## 206 reverseLinkedList
+1. 迭代 while loop
+- 链表与数组 数组的原地改变 是要在原数组上
+- 链表本身就是在原地址，它的地址是不改变的，所改变的知识next的指向
+- 注意边界条件 current != NULL
+2. 递归 不太懂
+
+
+## 141 linked list cycle
+1. 使用 JavaScript 中的 Map 最好可以看一下底层实现
+2. 快慢指针 龟兔原理 
