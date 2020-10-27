@@ -19,7 +19,11 @@
 ## 15 3sum
 
 
-
+## 21 merge sorted linked list
+1. 迭代
+- 链表中排序 交换位置 合并 最重要的思想**可以有自己的开头节点**
+- time O(N)
+2. 递归 之后补充 不太会
 
 ## 22 swapNodeInPairs 两两交换节点
 1. 迭代 while loop
@@ -40,3 +44,8 @@
 ## 141 linked list cycle
 1. 使用 JavaScript 中的 Map 最好可以看一下底层实现
 2. 快慢指针 龟兔原理 
+**边界条件 [](空) [1](一个元素）[1,2](两个元素)**
+
+## 142 linked list cycle II
+1. 使用 JavaScript 中的 Map
+2. a + (n -1) * b + n * c = 2 * (a + b)
