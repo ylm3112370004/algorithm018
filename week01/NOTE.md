@@ -49,3 +49,17 @@
 ## 142 linked list cycle II
 1. 使用 JavaScript 中的 Map
 2. a + (n -1) * b + n * c = 2 * (a + b)
+
+
+# 栈
+最近相关性
+
+## 使用两个栈来解决特殊性问题
+
+1. 只用栈来实现队列
+
+2. 只用队列来实现栈
+
+# Deque: Double-End Queue 双端队列
+
+this.map[key].value = value;

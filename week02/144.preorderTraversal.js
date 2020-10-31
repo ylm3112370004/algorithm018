@@ -26,15 +26,17 @@ var preorderTraversal = function(root) {
 // stack 迭代
 var preorderTraversal = function(root) {
   let ret = [];
-  let stk = [];
-  while (root || stk.length) {
-    while (root) {
+  let stack = [];
+  if (root) stack.push(root);
+  while (stack.length !== 0) {
+      root = stack.pop();
       ret.push(root.val);
-      stk.push(root);
-      root = root.left;
-    }
-    root = stk.pop();
-    root = root.right;
+      if (root.right) {
+          stack.push(root.right);
+      }
+      if (root.left) {
+          stack.push(root.left);
+      }
   }
   return ret;
-}
+};
