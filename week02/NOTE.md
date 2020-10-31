@@ -29,6 +29,32 @@
 ```
 
 ### HashMap的个人总结
+```java
+class HashMap<K, V> {
+
+  // 数组 + 单向链表 实现的
+
+  Node<K, V>[] table;
+
+  public V put(K k, V v) {
+    return v;
+  }
+}
+
+class Node<K, V> {
+  final int hash;
+  final K key;
+  V value;
+  Node <K, V> next;
+  Node(int hash, K key, V value, Node<K, V> next) {
+    this.hash = hash;
+    this.key = key;
+    this.value = value;
+    this.next = next;
+  }
+}
+
+```
 
 ### leetCode
 
