@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/intersection-of-two-arrays-ii/
 /**
  * @param {number[]} nums1
  * @param {number[]} nums2
@@ -50,4 +51,6 @@ var intersect = function(nums1, nums2) {
 
 // 需要使用归并排序
 
-
+// - 两种情况
+// - 如果nums2较大，内存中无法存放，那么将num1 hash，然后从nums2取出数据，做交集
+// - 如果两个都大，那么使用适合的外边排序 先排序，然后 取出数据，作比较
