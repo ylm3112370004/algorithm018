@@ -5,16 +5,22 @@
 
 计算机语言 汇编语言  函数或指令写在什么地方 反复跳转到那里去执行
 
-### n层循环怎么写
+### n层循环怎么写 
+
+递归树 排列 组合 是否重复
 
 ```javascript
-// n 层循环
+// n 层循环 一定要记住 深度优先遍历
 const dfs = function(n, k, path) {
+  // 终止条件
   if (path.length === k) {
     console.log([].concat(path));
     return;
   }
   for (let i = 1; i <= n; i++) {
+
+    // TODO 剪枝
+
     path.push(i);
     dfs(n, k, path);
     path.pop(); // 回溯
