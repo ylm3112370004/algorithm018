@@ -88,7 +88,7 @@ var postorderTraversal = function(root) {
 ## N叉树前序遍历
 
 ``` javascript
-// 递归
+// 递归 深度优先dfs
 var preorder = function(root) {
     let ret = [];
     const order = function(root) {
@@ -104,12 +104,11 @@ var preorder = function(root) {
     return ret;
 };
 
-// 迭代
+// 迭代 广度优先bfs
 var preorder = function(root) {
     if (!root) return [];
     let ret = [];
-    let stack = [];
-    stack.push(root);
+    let stack = [root];
     while (stack.length) {
         let node = stack.pop();
         ret.push(node.val);
